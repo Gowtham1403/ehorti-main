@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  scroll-padding: 53.2px;
+}
+a {
+  text-decoration: none !important;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.my-d-block {
+  display: block !important;
+}
+/* Error */
+
+.input-error {
+  color: red !important;
+  border-bottom: 1px solid rgb(255, 0, 0) !important;
+}
+.input-error:focus {
+  color: red !important;
+  border-bottom: 1px solid rgb(255, 0, 0) !important;
+}
+.error-msg,
+.otp-error-msg,
+.pass-error-msg,
+.login-error,
+#updateErr,
+#postErr {
+  font-size: 0.85rem;
+  color: red;
+}
+
+/* login modal */
+
+.login .login-modal {
+  background-color: #388e3c;
+  color: #fff;
+}
+.login .btn-close {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: -46px;
+  padding: 15px;
+  opacity: 1;
+  border-radius: 0;
+}
+.login .btn-close:focus {
+  box-shadow: 0 0 0;
+  background-color: #fff;
+}
+.login .modal-content,
+.login .modal-header {
+  border-radius: 0;
+}
+.login .modal-dialog {
+  width: 400px;
+}
+
+.login .modal-body {
+  padding: 10px 40px 30px 40px;
+}
+.login input {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid rgba(2, 0, 0, 0.253);
+  padding: 10px;
+}
+.login input:focus {
+  box-shadow: 0 0 0;
+  border-bottom: 1px solid var(--bs-success);
+}
+.login button {
+  border-radius: 3px;
+  padding: 10px 0;
+}
+.login .modal-content p {
+  font-size: 0.8rem;
+}
+.login .modal-content h2 {
+  font-weight: 600;
+}
+.login .for-pass {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.login .modal-body .create-btn {
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  color: green !important;
+  cursor: pointer;
+}
+.pass {
+  position: relative;
+}
+#show-pass {
+  display: none;
+}
+#hide-pass,
+#show-pass {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  color: rgba(51, 51, 51, 0.801);
+  cursor: pointer;
+}
+
+/* main nav */
+.navbar {
+  background-color: #25a244;
+}
+.navbar .navbar-toggler {
+  color: #fff;
+  padding: 0;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0;
+}
+.navbar .navbar-brand {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+.navbar .search-bar {
+  width: 100%;
+  flex: 1;
+  padding: 0 25px 0 0;
+}
+.navbar .search-bar form input,
+.navbar .search-bar form button {
+  border: none;
+}
+.navbar .search-bar form input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.navbar .search-bar form button {
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #155d27;
+  color: #fff;
+}
+.navbar .loc-bar form input,
+.navbar .loc-bar form button {
+  margin: 5px 0;
+  border: none;
+  background-color: transparent !important;
+  color: #fff !important;
+  border-bottom: 2px solid #fff;
+}
+.navbar .loc-bar form input {
+  padding: 6px;
+}
+.navbar .loc-bar form input::placeholder {
+  color: #fff;
+}
+.navbar .loc-bar form button {
+  border-radius: 5px;
+  border: 0;
+  background-color: #155d27 !important;
+  color: rgba(2, 0, 0, 0.6);
+}
+.navbar .loc-bar form {
+  padding: 0 25px;
+}
+.navbar form input {
+  border-radius: 0;
+  height: 48px;
+  border: 2px solid #333;
+}
+.navbar form input:focus,
+.navbar form button:focus {
+  box-shadow: 0 0 0 !important;
+  outline: none !important;
+}
+.navbar .profile-btn {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.navbar .profile-btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+.navbar .login-btn {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+}
+.navbar .login-btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+.navbar .logout-btn {
+  color: #fff;
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.navbar .logout-btn:hover {
+  border-bottom: 1px solid #fff;
+}
+.navbar .sell-btn a {
+  background: #00c3ff;
+  background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);
+  background: linear-gradient(to right, #ffff1c, #00c3ff);
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-right: 20px;
+  border: 3px solid #333;
+  color: #333;
+  font-weight: 600;
+}
+
+/* cat-nav */
+
+.cat-nav .mob-view {
+  display: none;
+}
+.cat-nav {
+  width: 100%;
+  margin-top: 74px;
+  background-color: rgba(0, 47, 52, 0.03);
+  padding: 5px 0;
+  text-align: center;
+  box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* my-account */
+
+.my-acc {
+  background-color: rgba(0, 47, 52, 0.03);
+  min-height: 100vh;
+  padding-top: 100px;
+}
+.my-acc .main-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px 0 20px 0;
+}
+.my-acc .main-wrapper .header {
+  background-color: #007f5f;
+  color: #fff;
+  padding: 10px 40px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+.my-acc .main-wrapper .header h1 {
+  font-size: 5rem;
+}
+.my-acc .main-wrapper .header form {
+  margin-top: 10px;
+}
+.my-acc .main-wrapper .header input {
+  border: 1px solid var(--bs-success);
+}
+.my-acc .main-wrapper .header input:focus {
+  border: 1px solid var(--bs-success);
+  box-shadow: 0 0 0;
+}
+.my-acc .main-wrapper .body {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.my-acc .main-wrapper .body input:focus,
+.my-acc .main-wrapper .body textarea:focus,
+.my-acc .main-wrapper .body select:focus {
+  box-shadow: 0 0 0;
+  border: 1px solid var(--bs-success);
+}
+
+/* post Products */
+
+.selling-post {
+  background-color: rgba(0, 47, 52, 0.03);
+  padding: 100px;
+}
+.selling-post .post {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+}
+.selling-post .post .post-detail h4 {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+.selling-post .post .post-img img {
+  height: 300px;
+}
+.selling-post .post .post-detail input,
+.selling-post .post .post-detail select,
+.selling-post .post .post-detail textarea {
+  border: 1px solid var(--bs-success);
+}
+.selling-post .post .post-detail input:focus,
+.selling-post .post .post-detail select:focus,
+.selling-post .post .post-detail textarea:focus {
+  box-shadow: 0 0 0;
+}
+/* home banner */
+
+.home-banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.home-banner img {
+  width: 100%;
+  height: 350px;
+}
+.home-banner .overlay {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home-banner .overlay .content {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.home-banner .overlay .content .btn {
+  border-radius: 5px;
+  padding: 8px 50px;
+  background-color: #519259;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: bold;
+}
+.home-banner .overlay .content .btn:focus,
+.home-banner .overlay .content .btn.btn-outline:focus {
+  box-shadow: 0 0 0;
+}
+.home-banner .overlay .content .btn.btn-outline {
+  background-color: transparent;
+  border: 3px solid #34be82;
+}
+.home-banner .overlay .content .btn.btn-outline:hover {
+  background-color: #519259;
+  border: 3px solid #519259;
+}
+
+/* home */
+
+.upload-posts {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  position: relative;
+}
+.upload-posts .post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.upload-posts img {
+  height: 250px;
+  text-align: center;
+  padding: 10px;
+}
+.upload-posts .post-footer {
+  padding: 10px 20px;
+}
+.upload-posts .post-footer p {
+  font-size: 0.8rem;
+}
+.upload-posts .post-footer .line-foot {
+  display: flex;
+}
+.upload-posts .post-footer .line-foot p:first-child,
+.address {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 70%;
+}
+.upload-posts .post-footer .line-foot p:last-child {
+  margin-left: auto !important;
+}
+
+/* buying */
+
+.buy {
+  padding-top: 100px;
+  background-color: rgba(0, 47, 52, 0.05);
+  padding-bottom: 30px;
+  min-height: 100vh;
+}
+.buy .post-img-box {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 25px;
+  background-color: #fff;
+  position: relative;
+}
+.buy .post-img-box .save-purchase-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 150, 0, 1);
+  padding: 10px 0px;
+  border-top-right-radius: 25px;
+}
+.buy .post-img-box .save-purchase-btn a {
+  color: #fff;
+  padding: 0px 20px;
+  font-weight: 500;
+}
+.buy .post-details {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.buy .post-details h4,
+.buy .seller-details h4 {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+.buy .post-details h5,
+.buy .post-details h6,
+.buy .price-quan h5 {
+  color: rgba(0, 0, 0, 0.8);
+}
+.buy .price-quan {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.buy .price-quan h3 {
+  font-weight: 600;
+}
+.buy .price-quan p,
+.buy .seller-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.buy .seller-details {
+  height: auto;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+/* seller-chat */
+
+.seller-chat {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 47, 52, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seller-chat .chat-wrapper {
+  background-color: #fff;
+  width: 400px;
+  height: 80vh;
+  margin: 40px auto 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.seller-chat .chat-wrapper .chat-header {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 20px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.seller-chat .chat-wrapper .chat-header a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 20px;
+  display: inline-block;
+}
+.seller-chat .chat-wrapper .chat-header h5 {
+  margin-top: 5px;
+  display: inline-block;
+}
+.seller-chat .chat-wrapper .chat-header h5 span {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.seller-chat .chat-wrapper .chat-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+}
+.seller-chat .chat-wrapper .chat-footer input {
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 20px;
+  height: 100%;
+}
+.seller-chat .chat-wrapper .chat-footer input:focus,
+.seller-chat .chat-wrapper .chat-footer .btn:focus {
+  box-shadow: 0 0 0;
+}
+.seller-chat .chat-wrapper .chat-footer input::placeholder {
+  color: #fff;
+}
+.seller-chat .chat-wrapper .chat-footer .btn {
+  background-color: #333;
+  color: #fff;
+  height: 100%;
+  margin-left: 5px;
+  padding: 5px 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+.seller-chat .chat-wrapper .chat-body {
+  padding: 68px 10px 72px 10px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.seller-chat .chat-wrapper .chat-body::-webkit-scrollbar {
+  background-color: #fff;
+  width: 3px;
+}
+.seller-chat .chat-wrapper .chat-body::-webkit-scrollbar-button {
+  display: none;
+}
+.seller-chat .chat-wrapper .chat-body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+}
+.seller-chat .chat-wrapper .customer-msg {
+  margin-left: auto;
+  background-color: #d1f5d3;
+  padding: 5px 10px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  width: 80%;
+}
+.seller-chat .chat-wrapper .seller-msg {
+  background-color: #9dc6a7;
+  padding: 5px 10px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  max-width: 80%;
+}
+
+/* mychat */
+
+.seller-chat .chat-wrapper .chat-body.chat-index {
+  overflow-x: hidden;
+  padding-top: 94px;
+}
+.seller-chat .chat-wrapper .chat-body.chat-index .row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.seller-chat .chat-wrapper .chat-body.chat-index .customer-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.mychat-active {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.mychat-active a {
+  color: #333 !important;
+}
+
+/* profile */
+
+.profile {
+  padding: 20px 0;
+  min-height: 100vh;
+  margin-top: 74px;
+  background-color: #d2f5e3;
+}
+.profile .header {
+  background-color: #fff;
+  padding: 30px 80px 10px 80px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.profile .header .user-icon {
+  font-size: 5.5rem;
+  margin-bottom: 0;
+}
+.profile .header .info {
+  margin-left: 0px;
+}
+.profile .header .info p {
+  font-size: 1.4rem;
+}
+.profile .header-2 {
+  padding: 10px 0 20px 0;
+}
+.profile .header-2 a {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+}
+.profile .header-2 a:hover {
+  text-decoration: none;
+}
+.profile .header-2 a.active-tab {
+  border-bottom: 2px solid #333;
+}
+.profile .main {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px 40px 40px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.profile .main .box {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.profile .main .box .box-header {
+  text-align: center;
+  padding: 10px;
+}
+.profile .main .box .box-header img {
+  height: 180px !important;
+}
+.profile .main .box .box-content {
+  padding: 5px 15px;
+}
+.profile .main .box .box-content .del-icon {
+  font-size: 1.3rem;
+  color: #ff0000;
+}
+
+/* search and Address suggession */
+
+.search-bar input::-webkit-calendar-picker-indicator,
+.loc-bar input::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+.search-bar datalist,
+.loc-bar datalist {
+  position: absolute;
+  top: 60px;
+  max-height: 20em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: #fff !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.search-bar datalist option,
+.loc-bar datalist option {
+  font-size: 1rem;
+  padding: 0.3em 0.5em;
+  background-color: #fff;
+  cursor: pointer;
+}
+.loc-bar datalist {
+  border-radius: 0;
+  padding: 0.4em 1em;
+}

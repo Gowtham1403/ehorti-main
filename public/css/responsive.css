@@ -1,0 +1,467 @@
+/* RESPONSIVE */
+
+/* Mobile View */
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .login .modal-dialog {
+    width: auto;
+  }
+  .login .btn-close {
+    right: 0;
+    padding: 5px;
+  }
+  .login .modal-body {
+    padding: 10px 20px 30px 20px;
+  }
+
+  /* nav */
+  .navbar {
+    padding: 0 0 8px 0;
+  }
+  .navbar .container {
+    display: inline;
+  }
+  .navbar .loc-bar form {
+    padding: 0 0 0 18px;
+  }
+  .navbar .loc-bar .navbar-brand {
+    margin-right: 0 !important;
+    padding: 10px 0;
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+  .navbar .loc-bar form input,
+  .navbar .loc-bar form button {
+    height: 35px;
+    margin-top: 10px;
+  }
+  .navbar .loc-bar form input {
+    font-size: 0.9rem;
+  }
+  .navbar .search-bar {
+    padding: 0;
+  }
+  .navbar .btns-bar .pro-hide {
+    display: none;
+  }
+
+  .navbar .btns-bar .user-pro {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+  }
+  .navbar .user-pro .pro-header {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 8px 0 0 10px;
+  }
+  .navbar .user-pro .pro-header h1 {
+    font-size: 6rem;
+    opacity: 0.5;
+  }
+  .navbar .user-pro .pro-header span {
+    padding: 10px 0 0 10px;
+  }
+  .navbar .user-pro .pro-header span h1 {
+    font-size: 1.2rem;
+    opacity: 1;
+  }
+  .navbar .user-pro .pro-body {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px 20px;
+  }
+  .navbar .user-pro .pro-body h6 {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+    padding: 12px 0;
+  }
+  .navbar .user-pro .pro-body h6 a {
+    color: #333 !important;
+  }
+  .navbar .user-pro .pro-body h6:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .navbar .sell-btn {
+    display: none;
+  }
+  /* cat-nav */
+  .cat-nav .large-view {
+    display: none;
+  }
+  .cat-nav .mob-view {
+    display: block !important;
+  }
+  .cat-nav {
+    margin-top: 112px !important;
+  }
+
+  .cat-nav .mob-view .box {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+  }
+  .cat-nav .mob-view .box .box-header {
+    padding-top: 10px;
+  }
+  .cat-nav .mob-view .box .box-header img {
+    width: 150px;
+    height: 80px;
+  }
+  .cat-nav .mob-view div:first-child {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .cat-nav .mob-view div:first-child a {
+    color: #333;
+    text-decoration: underline !important;
+    font-weight: 600;
+  }
+  .cat-nav .mob-view div:last-child {
+    justify-content: center;
+  }
+  .cat-nav .mob-view div:last-child a {
+    color: #333;
+  }
+
+  .col-sm-0 {
+    display: none;
+  }
+
+  /* my-acc */
+  .my-acc .main-wrapper {
+    width: 100%;
+  }
+  .my-acc .main-wrapper .header {
+    padding: 10px;
+    text-align: center;
+  }
+  .my-acc .main-wrapper .body {
+    padding: 15px;
+  }
+  .my-acc .main-wrapper .body h6 {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* selling post */
+
+  .selling-post .container {
+    width: 100% !important;
+  }
+  .selling-post {
+    padding: 40px 0;
+  }
+  .selling-post .post {
+    padding: 30px 20px;
+  }
+  .selling-post .post .post-detail {
+    margin-top: 30px;
+  }
+  .selling-post .post .post-detail h6 {
+    font-size: 0.8rem;
+  }
+
+  /* home banner */
+  .home-banner img {
+    height: 150px;
+  }
+  .home-banner .overlay {
+    height: 150px;
+  }
+  .home-banner .overlay .content h3 {
+    font-size: 1rem;
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  /* home */
+  .upload-posts img {
+    height: 150px;
+    padding: 5px;
+  }
+  .upload-posts .post-footer {
+    padding: 5px;
+  }
+  .upload-posts .post-footer .line-foot {
+    flex-direction: column;
+  }
+  .upload-posts .post-footer .line-foot p:last-child {
+    margin-left: 0 !important;
+  }
+  .upload-posts .post-footer h5 {
+    font-size: 1rem;
+  }
+  .upload-posts .post-footer .line-foot p:first-child {
+    width: 100%;
+  }
+  .upload-posts .post-footer h5 span:last-child {
+    font-size: 0.7rem !important;
+  }
+
+  /* buy */
+
+  .buy .container {
+    width: 100% !important;
+  }
+  .buy .post-img-box {
+    margin-top: 30px;
+  }
+  .buy .post-details,
+  .buy .price-quan,
+  .buy .seller-details {
+    padding: 20px;
+  }
+  .buy .post-details h4 {
+    font-size: 1.2rem;
+  }
+  .buy .post-details h5 {
+    font-size: 0.9rem;
+  }
+  .buy .post-details h6 {
+    font-size: 0.8rem;
+  }
+  .buy .post-details p {
+    font-size: 1rem;
+  }
+  .buy .price-quan {
+    display: none;
+  }
+  .buy .price-quan h3 {
+    font-size: 1.4rem;
+  }
+  .buy .mob-price-quan {
+    display: block !important;
+    margin-top: 16px;
+  }
+
+  /* seller-chat */
+  .seller-chat {
+    background-color: #fff;
+  }
+  .seller-chat .container {
+    padding: 0;
+  }
+  .seller-chat .chat-wrapper {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    border: none;
+    margin: 0px;
+  }
+  .seller-chat .chat-wrapper .chat-header {
+    margin-top: 112px;
+  }
+  .seller-chat .chat-wrapper .chat-body {
+    padding-top: 180px;
+  }
+  .seller-chat .chat-wrapper .chat-body.chat-index {
+    padding-top: 205px !important;
+  }
+
+  /* profile */
+
+  .profile {
+    padding-top: 0;
+    margin-top: 112px !important;
+  }
+  .profile .container {
+    padding: 0;
+  }
+  .profile .header {
+    padding: 20px 25px 0 25px;
+    border-radius: 0;
+  }
+  .profile .header-2 a {
+    font-size: 1.1rem;
+  }
+
+  .profile .header .info {
+    margin-left: 50px;
+  }
+  .profile .header .user-icon {
+    font-size: 4rem;
+  }
+  .profile .header .info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0 !important;
+  }
+  .profile .header .info p {
+    font-size: 1.2rem;
+  }
+  .profile .header-2 {
+    text-align: center;
+  }
+  .profile .main {
+    padding: 10px;
+    border-radius: 0;
+  }
+  .profile .main .box {
+    margin-bottom: 15px;
+  }
+  .profile .main .box .box-header {
+    padding: 5px;
+  }
+  .profile .main .box .box-header img {
+    height: 140px !important;
+  }
+  .profile .main .box .box-content h2 {
+    font-size: 1.5rem;
+  }
+  .profile .main .box .box-content {
+    padding: 5px 10px;
+  }
+  .profile .main .box .box-content h5 {
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+  }
+  .profile .main .box .box-content .d-flex {
+    flex-direction: column;
+  }
+  .profile .main .box .box-content .d-flex a {
+    font-size: 0.8rem;
+  }
+
+  /* search and address suggestion */
+
+  .search-bar datalist {
+    top: 105px;
+  }
+  .search-subbar h5 {
+    font-size: 0.9rem;
+  }
+  .loc-bar datalist {
+    width: 93% !important;
+    left: 10px !important;
+    top: 45px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .loc-bar .navbar-brand {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .navbar .loc-bar form input {
+    width: 130px;
+  }
+  .navbar .loc-bar form input,
+  .navbar .loc-bar form button {
+    height: 35px;
+    margin-top: 10px;
+  }
+  .navbar .search-bar {
+    margin-right: 5px;
+  }
+  .navbar .search-bar form input,
+  .navbar .search-bar form button {
+    margin-top: 2.5px;
+    height: 35px;
+  }
+
+  .navbar .btns-bar .pro-hide {
+    display: none;
+  }
+  .navbar .sell-btn {
+    display: none;
+  }
+
+  /* cat-nav */
+
+  .cat-nav {
+    margin-top: 53.2px;
+  }
+
+  /* my-acc */
+
+  .my-acc .main-wrapper {
+    width: 80%;
+  }
+  .my-acc .main-wrapper .header {
+    padding: 20px;
+  }
+
+  /* selling post */
+  .selling-post {
+    padding: 70px 0;
+  }
+  .selling-post .container {
+    width: 100% !important;
+  }
+  .selling-post .post {
+    padding: 30px 20px;
+  }
+
+  /* home */
+  .upload-posts img {
+    height: 180px;
+    padding: 5px;
+  }
+  .upload-posts .post-footer {
+    padding: 15px;
+  }
+  .upload-posts .post-footer .line-foot {
+    flex-direction: column;
+  }
+  .upload-posts .post-footer .line-foot p:last-child {
+    margin-left: 0 !important;
+  }
+  .upload-posts .post-footer h5 {
+    font-size: 1rem;
+  }
+  .upload-posts .post-footer .line-foot p:first-child {
+    width: 100%;
+  }
+  .upload-posts .post-footer h5 span:last-child {
+    font-size: 0.7rem !important;
+  }
+
+  /* buy */
+
+  .buy .container {
+    width: 100% !important;
+  }
+
+  /* profile */
+
+  .profile {
+    margin-top: 54px;
+  }
+  .profile .header .info {
+    margin-left: 50px;
+  }
+  .profile .main .box .box-header {
+    padding: 5px;
+  }
+  .profile .main .box .box-header img {
+    height: 140px !important;
+  }
+  .profile .main .box .box-content h2 {
+    font-size: 1.5rem;
+  }
+  .profile .main .box .box-content {
+    padding: 5px 10px;
+  }
+  .profile .main .box .box-content h5 {
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+  }
+  .profile .main .box .box-content .d-flex a {
+    font-size: 0.8rem;
+  }
+
+  /* search and address suggestion */
+
+  .search-bar datalist {
+    top: 45px;
+  }
+  .search-subbar h5 {
+    font-size: 0.9rem;
+  }
+}
